@@ -27,17 +27,17 @@ EOF
 echo "Setting up grc for colorized mysql output..."
 
 # Fetch grc files
-sudo curl -o /usr/local/bin/grc https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/grc
-sudo curl -o /usr/local/bin/grc.1 https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/grc.1
-sudo curl -o /usr/local/bin/grcat https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/grcat
-sudo curl -o /usr/local/bin/grcat.1 https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/grcat.1
+sudo curl -f -o /usr/local/bin/grc https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/grc
+sudo curl -f -o /usr/local/bin/grc.1 https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/grc.1
+sudo curl -f -o /usr/local/bin/grcat https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/grcat
+sudo curl -f -o /usr/local/bin/grcat.1 https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/grcat.1
 
 # Make executables
 sudo chmod +x /usr/local/bin/grc /usr/local/bin/grcat
 
 # Fetch grc config files
-sudo curl -o ~/.grcat https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/config/.grcat
-sudo curl -o ~/.my.cnf https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/config/.my.cnf
+sudo curl -f -o ~/.grcat https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/config/.grcat
+sudo curl -f -o ~/.my.cnf https://raw.githubusercontent.com/lily-gh/tinytools/main/grc/config/.my.cnf
 
 # make sure ssm-user owns the config files and grc/grcat executable and not root user
 sudo chown ssm-user:ssm-user ~/.grcat ~/.my.cnf

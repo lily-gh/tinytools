@@ -27,3 +27,10 @@ curl -fsSL tools.lilyoliveira.com | bash
 - Colorized MySQL console output for better readability
 - Automatically fetches and configures `grc` and `grcat` utilities
 - Includes MySQL-specific color configuration
+
+
+## Removing colorizer
+In order to remove the tools and settings for Generic Colouriser, simply run:
+```bash
+sudo rm -f /usr/local/bin/grc /usr/local/bin/grcat /usr/local/bin/grc.1 /usr/local/bin/grcat.1 ~/.grcat ~/.my.cnf ~/.vimrc && echo "Done cleaning up."
+```
