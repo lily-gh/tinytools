@@ -28,9 +28,19 @@ curl -fsSL tools.lilyoliveira.com | bash
 - Automatically fetches and configures `grc` and `grcat` utilities
 - Includes MySQL-specific color configuration
 
+##### TODO: add screenshot
+
+#### Customizing colors
+Edit `~/.grcat` in your server to set your preferred colors in ANSI format. For a reference table of the ANSI colors feel free to use this small tool I created: #TODO: add link
+
+
+_NOTE: `grc` and `grcat` scripts are provided "as-is" as a copy from [Generic Colouriser](https://github.com/garabik/grc) - copy taken on `27.10.2025`._
 
 ## Removing colorizer
 In order to remove the tools and settings for Generic Colouriser, simply run:
 ```bash
 sudo rm -f /usr/local/bin/grc /usr/local/bin/grcat /usr/local/bin/grc.1 /usr/local/bin/grcat.1 ~/.grcat ~/.my.cnf ~/.vimrc && echo "Done cleaning up."
 ```
+
+
+
